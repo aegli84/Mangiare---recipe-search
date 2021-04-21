@@ -7,7 +7,7 @@ import GlobalStyle from './GlobalStyles'
 function App() {
 
   const APP_ID = '741f35bb';
-  const APP_KEY = 'a263817d6f28b69fb2807ca40c21b53c';
+  const APP_KEY = process.env.REACT_APP_API_KEY;
 
     //all the recipes will be in the state
   const [recipes, setRecipes] = useState([]); // empty array for array of objects in data hits
@@ -19,7 +19,7 @@ function App() {
   },[query]);
 
   const getRecipes = async () => {
-    // q is the query and what is after it is the thing that we are searchign for
+    // q is the query and what is after it is the thing that we are searching for
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json()
     setRecipes(data.hits);
