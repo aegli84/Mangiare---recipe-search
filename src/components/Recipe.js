@@ -30,10 +30,10 @@ const Recipe = ({title, ingredients, image, link}) => {
 }
 
 const Wrapper = styled.div`
-    width: 30rem;
-    border-radius: 5px;
+    width: 25rem;
+    border-radius: 2rem;
     box-shadow: 0px 5px 20px #424b54;
-    margin: 10px;
+    margin: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -41,18 +41,18 @@ const Wrapper = styled.div`
     background: #6e9d9c;
     color: #fedbd0;
     overflow: hidden;
+    border: 3px solid #eed0c6;
     &:hover {
-        border: 1px solid whitesmoke;
-        box-shadow: 0px 5px 20px #e37f6d;
+        box-shadow: 0px 5px 20px black;
     }
 `
 const H1 = styled.h1 `
     padding: 1rem;
 `
 const Image = styled.img`
-    width: 30rem;
-    height: 50vh;
-    padding-top: 2vh;
+    width: 25rem;
+    height: 35vh;
+    padding-top: 1vh;
     object-fit: cover;
     
 `

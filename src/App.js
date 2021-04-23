@@ -143,7 +143,8 @@ const Recipes = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
+  padding-left: 5rem;
+  padding-right: 5rem;
 `
 
 
