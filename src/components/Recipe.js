@@ -1,14 +1,27 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import styled from 'styled-components'
-import {v4 as uuidv4} from 'uuid'
-import { BiLinkExternal} from 'react-icons/bi';
-import { IoIosArrowDropdown} from 'react-icons/io';
+import {v4 as uuidv4 } from 'uuid'
+import { BiLinkExternal } from 'react-icons/bi';
+import { IoIosArrowDropdown } from 'react-icons/io';
 import { motion } from "framer-motion"
 
 const Recipe = ({title, ingredients, image, link}) => {
     const [show, setShow] = useState(false);
     return(
-        <Wrapper>
+        <Wrapper 
+            // animate={{ y: 30 }}
+            // transition={{ 
+            //     type: 'spring',
+            //     bounce: 0.25,
+            //     ease: 'easeInOut',
+            // }}
+            drag
+            dragConstraints={{
+                top: -100,
+                left: -70,
+                right: 100,
+                bottom: 90,
+            }}>
             <H1>{title}</H1>
             <motion.div  whileHover={{ scale: 1.3 }} >
             <IoIosArrowDropdown size = '2em' onClick={() => setShow(!show)}/>
@@ -29,9 +42,9 @@ const Recipe = ({title, ingredients, image, link}) => {
     )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled(motion.div)`
     width: 25rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 0px 5px 20px #424b54;
     margin: 12px;
     display: flex;
@@ -41,7 +54,7 @@ const Wrapper = styled.div`
     background: #6e9d9c;
     color: #fedbd0;
     overflow: hidden;
-    border: 3px solid #eed0c6;
+    border: 4px solid #eed0c6;
     &:hover {
         box-shadow: 0px 5px 20px black;
     }
@@ -72,6 +85,9 @@ const A = styled.a`
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1rem;
+    &:hover {
+        color: black;
+    }
 `
 
 export default Recipe;

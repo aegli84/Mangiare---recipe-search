@@ -2,9 +2,9 @@ import { useEffect, useState, useRef } from 'react'
 import Recipe from './components/Recipe'
 import styled from 'styled-components'
 import GlobalStyle from './GlobalStyles'
-import {v4 as uuidv4} from 'uuid'
-import Alert from './components/Alert'
-import { motion } from "framer-motion"
+import { v4 as uuidv4 } from 'uuid'
+// import Alert from './components/Alert'
+// import { motion } from "framer-motion"
 
 function App() {
 
