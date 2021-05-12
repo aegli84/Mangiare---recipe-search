@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/aegli84/Mangiare---recipe-search/static/js/main.7287314b.chunk.js",
+    "main.js.map": "/aegli84/Mangiare---recipe-search/static/js/main.7287314b.chunk.js.map",
+    "runtime-main.js": "/aegli84/Mangiare---recipe-search/static/js/runtime-main.70d90a9f.js",
+    "runtime-main.js.map": "/aegli84/Mangiare---recipe-search/static/js/runtime-main.70d90a9f.js.map",
+    "static/js/2.c9247f63.chunk.js": "/aegli84/Mangiare---recipe-search/static/js/2.c9247f63.chunk.js",
+    "static/js/2.c9247f63.chunk.js.map": "/aegli84/Mangiare---recipe-search/static/js/2.c9247f63.chunk.js.map",
+    "static/js/3.03680adf.chunk.js": "/aegli84/Mangiare---recipe-search/static/js/3.03680adf.chunk.js",
+    "static/js/3.03680adf.chunk.js.map": "/aegli84/Mangiare---recipe-search/static/js/3.03680adf.chunk.js.map",
+    "index.html": "/aegli84/Mangiare---recipe-search/index.html",
+    "static/js/2.c9247f63.chunk.js.LICENSE.txt": "/aegli84/Mangiare---recipe-search/static/js/2.c9247f63.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70d90a9f.js",
+    "static/js/2.c9247f63.chunk.js",
+    "static/js/main.7287314b.chunk.js"
+  ]
+}
