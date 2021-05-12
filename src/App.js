@@ -18,13 +18,17 @@ function App() {
   // const [alert, setAlert] =useState('');
   const inputRef = useRef();
 
+
   useEffect(() => {
+
     getRecipes();
-  },[query]);
+    
+  },[query]);// eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     inputRef.current.focus();
 }, []);
+
 
   const getRecipes = async () => {
     // if(query !== "") { 
